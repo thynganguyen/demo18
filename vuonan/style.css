@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0; 
+}
+
+nav {
+    background-color: #fff;
+}
+
+.menu-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+.menu-bar li {
+    float: left;
+
+}
+
+.menu-bar li.right {
+    float: right;
+}
+
+.menu-bar li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu-bar li a:hover {
+    background-color: #026938;
+}
+
+.Question{
+    text-align: center;
+}
