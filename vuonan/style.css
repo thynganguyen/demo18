@@ -6,24 +6,25 @@ body {
 }
 
 nav {
-    background-color: #fff;
+    background-color: #ede1c6;
+    display: flex; /* Sử dụng Flexbox cho bố cục linh hoạt */
+    justify-content: space-between; /* Giữa logo, menu, và phần bên phải */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding: 10px 20px;
 }
 
 .menu-bar {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     display: flex;
+    justify-content: center; /* Căn giữa các mục menu */
+    flex: 1; /* Chiếm toàn bộ không gian còn lại giữa logo và phần bên phải */
 }
 
 .menu-bar li {
-    float: left;
+    margin: 0 15px; /* Khoảng cách giữa các mục menu */
 
-}
-
-.menu-bar li.right {
-    float: right;
 }
 
 .menu-bar li a {
@@ -34,10 +35,65 @@ nav {
     text-decoration: none;
 }
 
-.menu-bar li a:hover {
-    background-color: #026938;
+.menu-bar a:hover {
+    color: #2eae70;
 }
+
+.menu-right {
+    display: flex;
+    gap: 20px; /* Khoảng cách giữa các phần tử bên phải */
+}
+
+.menu-right a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.menu-right a:hover {
+    color: #2eae70;
+}
+
 
 .Question{
     text-align: center;
 }
+
+
+.image-container {
+    position: relative; /* Phần tử cha */
+    text-align: center;
+}
+
+.title {
+    font-family: Lexend-Regular;
+    position: absolute; /* Phần tử con, chèn chữ lên trên ảnh */
+    top: 50%; /* Đặt chữ ở giữa theo chiều dọc */
+    left: 50%; /* Đặt chữ ở giữa theo chiều ngang */
+    transform: translate(-80%, -50%); /* Điều chỉnh để chữ thật sự ở giữa */
+    color: white; /* Màu chữ */
+    font-size: 2em; /* Kích thước chữ */
+}
+
+.button{
+    font-family: Lexend-Regular;
+    position:sticky; /* Phần tử con, chèn chữ lên trên ảnh */
+    top: 50%; /* Đặt chữ ở giữa theo chiều dọc */
+    left: 50%; /* Đặt chữ ở giữa theo chiều ngang */
+    transform: translate(-80%, -80%); /* Điều chỉnh để chữ thật sự ở giữa */
+    color: white; /* Màu chữ */
+    font-size: 2em; /* Kích thước chữ */
+}
+
+.menubarlogo {
+    width: 50px;
+    height: 50px;
+}
+
+.menubarseacrh,
+.menubarshopping{
+    width: 50px;
+    height: 50px;
+}
+
